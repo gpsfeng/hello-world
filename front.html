@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户登录</title>
+<style>
+body{
+	background-image:url("https://static.runoob.com/images/mix/paper.gif");
+}
+
+.center1{
+	text-align:center;
+	line-height:300px;
+	font-family:"Times New Roman", Times, serif;
+}
+.center2{
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+}
+</style>
+</head>
+<body>
+<div class="center2">
+<font color="black">请选择您的用户类型</font>
+<br>
+
+<input type="button" value="读者" onclick="location1()"><br>
+<input type="button" value="管理员" onclick="location2()"><br>
+<br>
+
+</div>
+<script>
+function location1(){
+	window.location.href="reader.jsp";
+}
+function location2(){
+	window.location.href="adminlogin.html";
+}
+</script>
+</body>
+</html>

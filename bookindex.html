@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图书借阅</title>
+</head>
+<style>
+.body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 30	px;
+	color: #6f6f6f;
+    background: #2ac5c0 url(images/templatemo_body_top.jpg) repeat-x;
+}
+.button { /* 按钮美化 */
+	width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 30px; /* 字体大小 */
+}	
+.login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+</style>
+<body>
+<div align="center">
+<span class=body>
+欢迎来到图书借阅系统<br>
+<a href="BookServlet?action=record">查看借阅记录 </a><br>
+<a href="BookServlet?action=rank">查看图书借阅排名</a><br>
+<a href="BookServlet?action=remind">查看图书到期提醒</a> <br>
+<a href="find.jsp">图书档案查询</a>
+<a href="BookServlet?action=announce">查看公告</a> <br>
+</span>
+</div>
+<script>
+function location1(){
+	window.location.href="BookServlet?action=record";
+}
+function location2(){
+	window.location.href="BookServlet?action=rank";
+}
+function location3(){
+	window.location.href="BookServlet?action=remind";
+}
+function location4(){
+	window.location.href="find.jsp";
+}
+</script>
+</body>
+</html>

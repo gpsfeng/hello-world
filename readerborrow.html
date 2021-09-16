@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户权限管理</title>
+</head>
+<body>
+请输入用户ID、借书日期、归还日期和书的ISBN号以记录借书记录 ；
+<form action=AdminServlet?action=borrow method="post">
+用户ID<input type="text" name="id"> <br>
+ISBN<input type="text" name="ISBN"> <br>
+借书日期<input type="text" name="lend_date"> <br>
+归还日期<input type="text" name="back_date"> <br>
+<input type="submit" value="确定"> <br>
+</form>
+</body>
+</html>
