@@ -1,5 +1,3 @@
-# hello-world
-just another repository
-Hi Hubot!
+# java library administration
 
-I study in a junior high school, and i love math very much!
+java的图书管理系统
